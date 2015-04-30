@@ -17,7 +17,7 @@ days = range(1, 28)
 random.seed([1959])
 
 for r, e in names.iteritems():
-    unit = random.choice(["GeV", "MeV"])
+    unit = random.choice(["Gs", "T"])
     for i in ids:
         n = str(r)+"_"+str(i)+str(e)
         file = open(n, 'wa+')
