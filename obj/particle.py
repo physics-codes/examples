@@ -1,3 +1,4 @@
+from __future__ import print_function
 from scipy import constants as const
 
 class Particle(object):
@@ -12,7 +13,7 @@ class Particle(object):
         " My x position is: " + str(self.r['x']) +"\n"+\
         " My y position is: " + str(self.r['y']) +"\n"+\
         " My z position is: " + str(self.r['z'])
-        print self.myroar
+        print(self.myroar)
 
     def __init__(self, c=1, m=0, r={'x':0,'y':0,'z':0}):
         self.c = c
