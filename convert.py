@@ -52,7 +52,8 @@ def make_nb(text):
 
 
 def main():
-    files = [os.path.join(DIR, 'ch02-python.asciidoc')]
+    files = [os.path.join(DIR, fname) for fname in os.listdir(DIR) 
+             if fname.startswith('ch') and fname.endswith('.asciidoc')]
     for fname in files:
         with open(fname, 'r') as f:
             text = f.read()
